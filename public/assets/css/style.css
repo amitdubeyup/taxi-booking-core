@@ -602,11 +602,15 @@ figure {
   color: #f78536 !important;
 }
 
+.form-control {
+  color: #000;
+}
+
 .tabulation {
   width: 100%;
   float: left;
   margin-top: -7em;
-  background: rgba(255, 255, 255, 0.95);
+  background: #fff;
   -webkit-box-shadow: 0px 43px 83px -20px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 0px 43px 83px -20px rgba(0, 0, 0, 0.41);
   -ms-box-shadow: 0px 43px 83px -20px rgba(0, 0, 0, 0.41);
@@ -615,7 +619,7 @@ figure {
 }
 
 .tabulation label {
-  color: rgba(0, 0, 0, 0.5);
+  color: #999;
   font-size: 14px;
 }
 
@@ -628,31 +632,29 @@ figure {
 .tabulation input[type="text"],
 .tabulation input[type="number"],
 .tabulation input[type="time"] {
-  background: rgba(0, 0, 0, 0.05);
-  border: none;
+  background: #fff;
+  border: 1px solid #f78536;
+  border-left: 5px solid #f78536;
   box-shadow: none;
-  font-weight: bold;
   font-size: 14px;
   padding: 5px 10px !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  color: #f78536 !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .tabulation input[type="date"] {
-  background: rgba(0, 0, 0, 0.05);
-  border: none;
+  background: #fff;
+  border: 1px solid #f78536;
+  border-left: 5px solid #f78536;
   box-shadow: none;
-  font-weight: bold;
   font-size: 14px;
   padding: 5px 5px !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  color: #f78536 !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   text-transform: uppercase;
 }
 
@@ -665,78 +667,77 @@ select[name="package_type"],
 select[name="rental_car_type"],
 select[name="salutation"],
 select[name="gender"] {
-  background: rgba(0, 0, 0, 0.05);
-  border: none;
+  background: #fff;
+  border: 1px solid #f78536;
+  border-left: 5px solid #f78536;
   box-shadow: none;
-  font-weight: bold;
   font-size: 14px;
   padding: 5px 10px !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  color: #f78536 !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   outline: none;
 }
 
 .tabulation input[type="text"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="text"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="text"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="text"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="number"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="number"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="number"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="number"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="time"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="time"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="time"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 .tabulation input[type="time"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #f78536 !important;
+  color: #000 !important;
 }
 
 @media screen and (max-width: 480px) {
@@ -2304,7 +2305,6 @@ div.cs-select span {
   .nsg-taxi-nav-toggle {
     display: block;
     top: 0px;
-    margin-top: 2em;
   }
 }
 
@@ -2713,4 +2713,23 @@ label a {
 optgroup[label] {
   background-color: #ef6437 !important;
   color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  #nsg-taxi-logo,
+  .nsg-taxi-nav-toggle {
+    margin-bottom: 10px;
+  }
+
+  #nsg-taxi-logo {
+    margin-top: 10px;
+  }
+
+  .nsg-taxi-nav-toggle {
+    margin-top: 15px;
+  }
+
+  #nsg-taxi-features {
+    margin-top: 15rem;
+  }
 }
