@@ -383,6 +383,7 @@ figure {
   width: 100%;
   z-index: 1022;
   background: #fff;
+  box-shadow: -1px 3px 10px -3px #a9a4a4;
 }
 
 .nav-header {
@@ -1859,23 +1860,36 @@ div.cs-select span {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .header-phone-icon {
     display: flex;
-    margin-left: 23rem;
+    margin-left: 12rem;
     background-color: #f78536;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     color: white;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     font-size: 25px;
+    box-shadow: -1px 3px 10px -3px #5d5151;
   }
 
   .nav-header {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-phone-icon {
+    margin-left: 23rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .header-phone-icon {
+    margin-left: 30rem;
   }
 }
 
