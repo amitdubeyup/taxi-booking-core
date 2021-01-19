@@ -793,17 +793,15 @@ div.cs-select span {
   color: white;
 }
 
-/* @media screen and (max-width: 480) {
+/* @media screen and (max-width: 768px) {
   #nsg-taxi-features > .container > .row > .features-box-shadow {
-    width: 300px;
-    height: 250px;
-    padding: 1rem;
-    margin: 2rem;
+    max-width: 70%;
+    max-height: 50%;
   }
 } */
 
 #nsg-taxi-features > .container > .row > .features-box-shadow {
-  
+  height: 300px;
 }
 
 #nsg-taxi-features > .container > .row > .features-box-shadow:hover {
@@ -812,7 +810,7 @@ div.cs-select span {
 }
 
 #nsg-taxi-features > .container > .row > .animate-box > .feature-left > .feature-copy > p {
-  text-align: center;
+  text-align: left;
 }
 
 #nsg-taxi-features > .container > .row > .animate-box > .feature-left > .feature-copy > h3 {
@@ -1368,6 +1366,9 @@ div.cs-select span {
 
 #nsg-taxi-features .feature-left {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #nsg-taxi-features .feature-left .icon i {
@@ -1378,6 +1379,7 @@ div.cs-select span {
   float: left;
   text-align: center;
   width: 15%;
+  margin: 2rem;
 }
 
 #nsg-taxi-features .feature-left .feature-copy {
@@ -1860,7 +1862,7 @@ div.cs-select span {
 @media screen and (min-width: 480px) {
   .header-phone-icon {
     display: flex;
-    margin-left: 25rem;
+    margin-left: 23rem;
     background-color: #f78536;
     height: 40px;
     width: 40px;
@@ -2479,7 +2481,7 @@ optgroup[label] {
 @media (max-width: 768px) {
   #nsg-taxi-logo,
   .nsg-taxi-nav-toggle {
-    margin-bottom: 10px;
+    margin: .8rem 0 0 0;
   }
 
   #nsg-taxi-logo {
@@ -2487,7 +2489,7 @@ optgroup[label] {
   }
 
   .nsg-taxi-nav-toggle {
-    margin-top: 15px;
+    
   }
 
   #nsg-taxi-features {
