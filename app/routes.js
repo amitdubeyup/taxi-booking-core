@@ -78,7 +78,9 @@ router.get('/taxi-booking/*', function (req, res) {
         page_offer_description: pageData.page_offer_description,
         page: 'index',
         total_cars: _.groupBy(_.sortBy(carDetailsData, 'car_type'), 'car_type'),
-        total_routes: routeData
+        total_routes: routeData,
+        from: "From",
+        to: "To"
       });
     }).catch((error) => {
       res.render('under-maintenance.ejs');

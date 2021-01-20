@@ -383,7 +383,7 @@ figure {
   width: 100%;
   z-index: 1022;
   background: #fff;
-  box-shadow: -1px 3px 10px -3px #a9a4a4;
+  box-shadow: -1px -3px 10px 3px;
 }
 
 .nav-header {
@@ -481,7 +481,7 @@ figure {
   -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */
 }
 
 #nsg-taxi-primary-menu .nsg-taxi-sub-menu > li > .nsg-taxi-sub-menu {
@@ -789,8 +789,13 @@ div.cs-select span {
 }
 
 .login-btn {
-  background-color: orange;
+  background-color: #f78536;
   border-right: none;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color:  #ff7615;
   color: white;
 }
 
@@ -816,6 +821,10 @@ div.cs-select span {
 
 #nsg-taxi-features > .container > .row > .animate-box > .feature-left > .feature-copy > h3 {
   color: #f78536;
+}
+
+.feature-desc-extra {
+  display: none;
 }
 
 .nsg-taxi-section-gray {
@@ -1879,6 +1888,10 @@ div.cs-select span {
     display: flex;
     align-items: center;
   }
+
+  .drawer-hello-text {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1905,23 +1918,32 @@ div.cs-select span {
   .header-drawer-icons {
     display: none;
   }
+
+  .drawer-hello-text {
+    display: none;
+  }
 }
 
-/* .header-drawer-icons {
+.header-drawer-icons {
+  color: #000;
+}
+
+.header-drawer-hello-icon {
   color: #f78536;
-} */
+}
 
 #offcanvas-menu {
   position: fixed;
   top: 0;
   bottom: 0;
   z-index: 99;
-  background: #222;
+  background: #fff;
   right: -240px;
   width: 240px;
   padding: 20px;
   overflow-y: scroll !important;
   display: none;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -1932,18 +1954,18 @@ div.cs-select span {
 
 #offcanvas-menu ul {
   padding: 0;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 #offcanvas-menu ul li {
-  padding: 0;
+  padding: 1rem;
   margin: 0 0 10px 0;
   list-style: none;
 }
 
 #offcanvas-menu ul li a {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0);
 }
 
 #offcanvas-menu ul li a:hover {
@@ -2477,6 +2499,7 @@ label a {
     z-index: 0;
     font-size: 25px;
     margin-bottom: 0px;
+    margin-top: 6rem;
   }
   .tabulation {
     background: rgb(255 255 255);
