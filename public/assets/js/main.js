@@ -155,3 +155,21 @@ webshims.polyfill('forms forms-ext');
 
 
 }());
+
+
+var arr = document.querySelectorAll(".feature-copy p");
+console.log(arr);
+const new_arr = [];
+
+for(let i=0; i<arr.length; i++) {
+	temp = arr[i];
+	new_arr.push(temp.toString().slice(0, -10));
+	console.log(temp);
+
+}
+
+// console.log(new_arr);
+
+// for(let j=0; j<arr.length; j++) {
+// 	console.log(new_arr[j]);
+// }
