@@ -1,5 +1,4 @@
-<html>
-<head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -42,21 +41,4 @@
   background-color: blue;
 }
 </style>
-</head>
-<body>
 
-
-
-<div class="dropup">
-  <button class="dropbtn">View Fare Detail</button>
-  <div class="dropup-content">
-	<p><h5>Base fare &nbsp;&nbsp;&nbsp;&nbsp; Rs. 350/-</h5></p>  
-	<p><h5>GST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 67.5/.</h5></p>
-	<p><h5>Charge(5%) &nbsp;&nbsp;&nbsp;&nbsp;State Tax Value</h5></p>
-	<p><h5>As Per Actual &nbsp;&nbsp;&nbsp;&nbsp;Toll Tax</h5></p>
-	<p><h5>As per Actual</h4></p>
- </div>
-</div>
-
-</body>
-</html>
