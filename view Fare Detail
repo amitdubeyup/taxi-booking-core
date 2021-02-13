@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.dropbtn {
+  background-color: white;
+  color:red;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content h5- {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: white}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="dropup">
+  <button class="dropbtn">View Fare Detail</button>
+  <div class="dropup-content">
+	<p><h5>Base fare &nbsp;&nbsp;&nbsp;&nbsp; Rs. 350/-</h5></p>  
+	<p><h5>GST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 67.5/.</h5></p>
+	<p><h5>Charge(5%) &nbsp;&nbsp;&nbsp;&nbsp;State Tax Value</h5></p>
+	<p><h5>As Per Actual &nbsp;&nbsp;&nbsp;&nbsp;Toll Tax</h5></p>
+	<p><h5>As per Actual</h4></p>
+ </div>
+</div>
+
+</body>
+</html>
