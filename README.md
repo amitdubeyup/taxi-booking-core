@@ -1,4 +1,4 @@
-# nsg-taxi-development
+# Taxi Booking Core
 
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 
