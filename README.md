@@ -1,10 +1,74 @@
-# NSG TAXI
+# nsg-taxi-development
 
-# Step to run project
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 
-1. Run "npm install"
-2. Run "nodemon node ."
-3. Browse "http://localhost:3000"
+A awesome app for taxi-booking!
 
+## 🚀 Tech Stack
 
-Note: Do not make any changes in app folder or in app.js file. Work only in website & public folder.
+- Express.js
+
+## ✨ Features
+
+- Modern and scalable architecture
+- RESTful API endpoints
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/amitdubeyup/nsg-taxi-development.git
+cd nsg-taxi-development
+
+# Install dependencies
+npm install
+```
+
+## ⚙️ Configuration
+
+Create a `.env` file in the root directory:
+
+```bash
+cp .env.example .env
+```
+
+Update the `.env` file with your configuration values.
+
+## 🚀 Usage
+
+```bash
+# Production mode
+npm start
+
+# Run tests
+npm test
+```
+
+## 📜 Available Scripts
+
+- `npm run start` - nodemon app.js
+- `npm run test` - App is working fine!
+
+## 📁 Project Structure
+
+```
+nsg-taxi-development/
+├── public/
+├── package.json
+├── .env.example
+├── README.md
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Amit Dubey**
+
+- GitHub: [@amitdubeyup](https://github.com/amitdubeyup)
