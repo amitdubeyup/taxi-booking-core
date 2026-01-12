@@ -15,6 +15,7 @@
   "author": "Amit Dubey",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "@google-cloud/firestore": "^4.8.1",
     "axios": "^0.19.2",
     "body-parser": "^1.18.2",

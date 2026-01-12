@@ -5,10 +5,12 @@ admin.initializeApp({
 });
 const db = admin.firestore();
 
+require('dotenv').config();
+
 module.exports = {
   admin: admin,
   db: db,
-  server_secret: 'ghkjdghskjghskgjhskhgkjs',
-  token_expire: '30d',
-  mail: 'info@nsgtaxi.com',
+  server_secret: process.env.SERVER_SECRET,
+  token_expire: process.env.TOKEN_EXPIRE,
+  mail: process.env.MAIL,
 };
